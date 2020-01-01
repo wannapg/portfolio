@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    font-family: 'Open Sans', Segoe UI, sans-serif;
+    color: #000;
+    background-color: #fafafa;
+    background-image: none;
+    background-position: top left;
+}
+
+header {
+    margin: 30px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 48pt;
+    font-family: Raleway, sans-serif;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+header h2 {
+    font-size: 28pt;
+    margin-top: 10px;
+    font-weight: 100;
+    font-family: Raleway, sans-serif;
+    letter-spacing: 1px;
+}
+.projects {
+    width: 100%;
+    display: inline-block;
+}
+.project {
+    width: 27%;
+    height: auto;
+    min-height: 130px;
+    float: left;
+    margin-left: 5%;
+    margin-top: 60px;
+}
+.project h3 {
+    font-weight: normal;
+}
+.project h4 {
+    font-weight: normal;
+    font-size: 9pt;
+}
+.footer {
+    text-align: center;
+    font-size: 8pt;
+}
+div {
+    display: block;
+}
+.sqs-row:before, .sqs-row:after {
+    content: "";
+    display: table;
+}
+.sqs-row:after {
+    clear: both;
+}
+.sqs-row:before, .sqs-row:after {
+    content: "";
+    display: table;
+}
+.sqs-row {
+    width: auto !important;
+}
+p {
+    font-family: Georgia,serif;
+    font-weight: normal;
+    line-height: 1.8em;
+    font-size: 13px;
+    font-family: "Helvetica Neue","Arial","sans-serif";
+    font-weight: 200;
+    font-style: normal;
+    line-height: 1.4em;
+    font-size: 16px;
+    text-transform: none;
+    text-decoration: none;
+    margin: 0 0 1.4em;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
