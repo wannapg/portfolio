@@ -1,1 +1,1 @@
-web: gunicorn myblog.wsgi:application --log-file - --log-level debug
+web: gunicorn kangyoungeun.wsgi --log-file - 
