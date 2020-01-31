@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block body %}
 
-
+{% load static from staticfiles %}
 {% load static %}
 <link rel="stylesheet" href="{% static 'css/projects.css' %}" type="text/css">
 
@@ -29,6 +29,7 @@
               <a class="nav-item" href="{% url 'main' %}">Main</a>
               <a class="nav-item" href="{% url 'projects' %}">Projects</a>
               <a class="nav-item" href="{% url 'courses' %}">Courses</a>
+              <a class="nav-item" href="{% url 'resume' %}">Resume</a>
           </div>
     </header>
     <hr>
@@ -65,7 +66,7 @@
     <div class="image-block-outer-wrapper layout-caption-hidden design-layout-inline   " id="yui_3_17_2_1_1578108231352_204">
       <div class="intrinsic" style="max-width:818.0px;" id="yui_3_17_2_1_1578108231352_203">
           <div style="padding-bottom: 94.5687%; overflow: hidden;" class="image-block-wrapper   has-aspect-ratio" data-animation-tier="1" data-description="" id="yui_3_17_2_1_1578108231352_201">
-            <img src="static\images\dino2.png" width="360" height="300">
+            <img src="{% static 'images\dino2.png' %}" width="360" height="300">
           </div>
       </div>
     </div>
@@ -85,7 +86,7 @@
     </div>
     <div class="sqs-block button-block sqs-block-button" data-block-type="53" id="block-yui_3_17_2_4_1502458289184_42320">
       <div class="sqs-block-content" id="yui_3_17_2_1_1578108231352_359"><div class="sqs-block-button-container--left" data-animation-tier="2" data-alignment="left" data-button-size="small" id="yui_3_17_2_1_1578108231352_358">
-	<a href="dino.html" class="sqs-block-button-element--small sqs-block-button-element" data-initialized="true">Learn More</a>
+	<a href="{% url 'dino' %}" class="sqs-block-button-element--small sqs-block-button-element" data-initialized="true">Learn More</a>
 </div>
 </div>
 
@@ -107,7 +108,7 @@
     <div class="image-block-outer-wrapper layout-caption-hidden design-layout-inline   " id="yui_3_17_2_1_1578108231352_204">
       <div class="intrinsic" style="max-width:818.0px;" id="yui_3_17_2_1_1578108231352_203">
           <div style="padding-bottom: 94.5687%; overflow: hidden;" class="image-block-wrapper   has-aspect-ratio" data-animation-tier="1" data-description="" id="yui_3_17_2_1_1578108231352_201">
-            <img src="C:\Users\강영은\Desktop\portfolio\static\images\donggora2.png" width="360" height="300">
+            <img src="{% static 'images\donggora2.png' %}" widt="360" height="300">
           </div>
       </div>
     </div>
@@ -148,7 +149,7 @@
     <div class="image-block-outer-wrapper layout-caption-hidden design-layout-inline   " id="yui_3_17_2_1_1578108231352_204">
       <div class="intrinsic" style="max-width:818.0px;" id="yui_3_17_2_1_1578108231352_203">
           <div style="padding-bottom: 94.5687%; overflow: hidden;" class="image-block-wrapper   has-aspect-ratio" data-animation-tier="1" data-description="" id="yui_3_17_2_1_1578108231352_201">
-            <img src="C:\Users\강영은\Desktop\portfolio\static\images\face_att.png" width="360" height="300">
+            <img src="{% static 'images\face_att.png' %}" width="360" height="300">
           </div>
       </div>
     </div>
@@ -189,7 +190,7 @@
     <div class="image-block-outer-wrapper layout-caption-hidden design-layout-inline   " id="yui_3_17_2_1_1578108231352_204">
       <div class="intrinsic" style="max-width:818.0px;" id="yui_3_17_2_1_1578108231352_203">
           <div style="padding-bottom: 94.5687%; overflow: hidden;" class="image-block-wrapper   has-aspect-ratio" data-animation-tier="1" data-description="" id="yui_3_17_2_1_1578108231352_201">
-            <img src="C:\Users\강영은\Desktop\portfolio\static\images\founders.jpg" width="360" height="300">
+            <img src="{% static 'images\founders.jpg' %}" width="360" height="300">
           </div>
       </div>
     </div>
@@ -233,7 +234,7 @@
     <div class="image-block-outer-wrapper layout-caption-hidden design-layout-inline   " id="yui_3_17_2_1_1578108231352_204">
       <div class="intrinsic" style="max-width:818.0px;" id="yui_3_17_2_1_1578108231352_203">
           <div style="padding-bottom: 94.5687%; overflow: hidden;" class="image-block-wrapper   has-aspect-ratio" data-animation-tier="1" data-description="" id="yui_3_17_2_1_1578108231352_201">
-            <img src="C:\Users\강영은\Desktop\portfolio\static\images\tave2.jpg" width="360" height="300">
+            <img src="{% static 'images\tave2.jpg' %}" width="360" height="300">
           </div>
       </div>
     </div>
@@ -277,7 +278,7 @@
     <div class="image-block-outer-wrapper layout-caption-hidden design-layout-inline   " id="yui_3_17_2_1_1578108231352_204">
       <div class="intrinsic" style="max-width:818.0px;" id="yui_3_17_2_1_1578108231352_203">
           <div style="padding-bottom: 94.5687%; overflow: hidden;" class="image-block-wrapper   has-aspect-ratio" data-animation-tier="1" data-description="" id="yui_3_17_2_1_1578108231352_201">
-            <img src="C:\Users\강영은\Desktop\portfolio\static\images\arduino.png" width="360" height="300">
+            <img src="{% static 'images\arduino.png' %}" width="360" height="300">
           </div>
       </div>
     </div>
@@ -319,7 +320,7 @@
     <div class="image-block-outer-wrapper layout-caption-hidden design-layout-inline   " id="yui_3_17_2_1_1578108231352_204">
       <div class="intrinsic" style="max-width:818.0px;" id="yui_3_17_2_1_1578108231352_203">
           <div style="padding-bottom: 94.5687%; overflow: hidden;" class="image-block-wrapper   has-aspect-ratio" data-animation-tier="1" data-description="" id="yui_3_17_2_1_1578108231352_201">
-            <img src="C:\Users\강영은\Desktop\portfolio\static\images\pinkweb2.png" width="360" height="300">
+            <img src="{% static 'images\pinkweb2.png' %}" width="360" height="300">
           </div>
       </div>
     </div>
@@ -361,7 +362,7 @@
     <div class="image-block-outer-wrapper layout-caption-hidden design-layout-inline   " id="yui_3_17_2_1_1578108231352_204">
       <div class="intrinsic" style="max-width:818.0px;" id="yui_3_17_2_1_1578108231352_203">
           <div style="padding-bottom: 94.5687%; overflow: hidden;" class="image-block-wrapper   has-aspect-ratio" data-animation-tier="1" data-description="" id="yui_3_17_2_1_1578108231352_201">
-            <img src="C:\Users\강영은\Desktop\portfolio\static\images\weather.png" width="360" height="300">
+            <img src="{% static 'images\weather.png' %}" width="360" height="300">
           </div>
       </div>
     </div>

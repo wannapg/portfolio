@@ -17,3 +17,6 @@ def projects(request):
 
 def dino(request):
     return render(request,'dino.html')
+
+def resume(request):
+    return render(request,'resume.html')

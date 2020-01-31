@@ -17,6 +17,10 @@
     
     
 </head>
+
+{% load static from staticfiles %}
+{% load static %}
+
 <body>
     <div class="header">
         <div class="header-block">
@@ -25,6 +29,7 @@
             <a class="nav-item" href="{% url 'main' %}">Main</a>
             <a class="nav-item" href="{% url 'projects' %}">Projects</a>
             <a class="nav-item" href="{% url 'courses' %}">Courses</a>
+            <a class="nav-item" href="{% url 'resume' %}">Resume</a>
 
         </div>
         <br>
@@ -36,13 +41,13 @@
         <br>
         <div class="social-media">
             <a class="social-media-item" href="https://www.instagram.com/younggg_eeun/">
-                <img src="C:\Users\강영은\Desktop\portfolio\static\images\instagram.jpg">
+                <img src="{% static 'images\instagram.jpg' %}">
             </a>
             <a class="social-media-item" href="https://www.facebook.com/profile.php?id=100011112421292">
-                <img src="C:\Users\강영은\Desktop\portfolio\static\images\facebook.jpg">
+                <img src="{% static 'images\facebook.jpg' %}">
             </a>
             <a class="social-media-item" href="https://github.com/wannapg">
-                <img src="C:\Users\강영은\Desktop\portfolio\static\images\github.png">
+                <img src="{% static 'images\github.png' %}">
             </a>
         </div>
         </div>
