@@ -1,4 +1,10 @@
-<!doctype html>
+{% extends 'base.html' %}
+{% block body %}
+
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/projects.css' %}" type="text/css">
+
 <html lang="en-US">
 <head>
     <meta charset="utf-8">
@@ -20,9 +26,9 @@
              </div>
              
              <div class="nav">
-              <a class="nav-item" href="main.html">Main</a>
-              <a class="nav-item" href="courses.html">Courses</a>
-              <a class="nav-item" href="resume">Resume</a>
+              <a class="nav-item" href="{% url 'main' %}">Main</a>
+              <a class="nav-item" href="{% url 'projects' %}">Projects</a>
+              <a class="nav-item" href="{% url 'courses' %}">Courses</a>
           </div>
     </header>
     <hr>
@@ -59,7 +65,7 @@
     <div class="image-block-outer-wrapper layout-caption-hidden design-layout-inline   " id="yui_3_17_2_1_1578108231352_204">
       <div class="intrinsic" style="max-width:818.0px;" id="yui_3_17_2_1_1578108231352_203">
           <div style="padding-bottom: 94.5687%; overflow: hidden;" class="image-block-wrapper   has-aspect-ratio" data-animation-tier="1" data-description="" id="yui_3_17_2_1_1578108231352_201">
-            <img src="C:\Users\강영은\Desktop\portfolio\static\images\dino2.png" width="360" height="300">
+            <img src="static\images\dino2.png" width="360" height="300">
           </div>
       </div>
     </div>
@@ -439,4 +445,4 @@
     <script async src="C:\Users\강영은\Desktop\portfolio\static\js\analytics.js"></script>
     
 </body>
-</html>
+{% endblock %}

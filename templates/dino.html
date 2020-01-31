@@ -1,4 +1,5 @@
-<!doctype html>
+{% extends 'base.html' %}
+{% block body %}
 <html lang="en-US">
 <head>
     <meta charset="utf-8">
@@ -20,12 +21,11 @@
              </div>
              
              <div class="nav">
-              <a class="nav-item" href="main.html">Main</a>
-              <a class="nav-item" href="courses">Courses</a>
-              <a class="nav-item" href="skills.html">Skills</a>
-              <a class="nav-item" href="resume">Resume</a>
+              <a class="nav-item" href="{% url 'main' %}">Main</a>
+              <a class="nav-item" href="{% url 'projects' %}">Projects</a>
+              <a class="nav-item" href="{% url 'courses' %}">Courses</a>
           </div>
     </header>
     <hr>
 </body>
-</html>
+{% endblock %}

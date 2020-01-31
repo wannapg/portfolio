@@ -1,4 +1,9 @@
-<!doctype html>
+{% extends 'base.html' %}
+{% block body %}
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/courses.css' %}" type="text/css">
+
 <html lang="en-US">
 <head>
     <meta charset="utf-8">
@@ -19,9 +24,9 @@
              </div>
              
              <div class="nav">
-              <a class="nav-item" href="main.html">Main</a>
-              <a class="nav-item" href="courses.html">Courses</a>
-              <a class="nav-item" href="resume">Resume</a>
+                <a class="nav-item" href="{% url 'main' %}">Main</a>
+                <a class="nav-item" href="{% url 'projects' %}">Projects</a>
+                <a class="nav-item" href="{% url 'courses' %}">Courses</a>
           </div>
     </header>
     <hr>
@@ -606,4 +611,4 @@
     
       
 </body>
-</html>
+{% endblock %}

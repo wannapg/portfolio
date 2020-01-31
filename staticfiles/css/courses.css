@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    font-family: 'Open Sans', Segoe UI, sans-serif;
+    color: #000;
+	background-color: #fafafa;
+}
+
+header {
+    margin: 30px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 48pt;
+    font-family: Raleway, sans-serif;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+header h2 {
+    font-size: 28pt;
+    margin-top: 10px;
+    font-weight: 100;
+    font-family: Raleway, sans-serif;
+    letter-spacing: 1px;
+}
+.courses {
+	margin: 0 auto;
+	height: auto;
+}
+.course {
+    float: left;
+    height: 80px;
+    width: 300px;
+    margin: 5px 10px;
+    padding: 5px;
+}
+.courseField {
+    color: #fff;
+    font-size: 8pt;
+    border: 1px;
+    padding: 0px 3px;
+    border-radius: 2px;
+}
+.courseName {
+    font-size: 12pt;
+}
+.courseInstructor {
+    font-size: 9pt;
+    font-style: italic;
+}
+.courseSchool {
+    font-size: 9pt;
+}
+a{color:black;
+    text-decoration:none;
+    font-family: Raleway;    
+    text-transform:uppercase;
+    font-weight:400;
+    line-height: 1.8em;
+    font-size: 20px;
+    padding: 0 10px;
+    position:relative;
+    margin:20px;
+    text-align:center;
+    letter-spacing:2px;}
+
+    a:hover{color:#3e3e3e;text-decoration:none}
+    a:focus{outline:thin dotted}
+    a:hover,a:active{outline:0}abbr[title]{border-bottom:1px dotted}
