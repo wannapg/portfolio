@@ -1,1 +1,1 @@
-web: gunicorn kangyoungeun.wsgi --log-file - 
+web: gunicorn myblog.wsgi:application --log-file =-
